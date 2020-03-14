@@ -1,0 +1,32 @@
+{
+  "name": "picpay",
+  "version": "1.0.0",
+  "description": "Node package API de E-Commerce do PicPay",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeanBarbosa/picpay.git"
+  },
+  "keywords": [
+    "picpay",
+    "qrcode",
+    "e-commerce",
+    "pagamentos"
+  ],
+  "author": "Jean Barbosa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JeanBarbosa/picpay/issues"
+  },
+  "homepage": "https://github.com/JeanBarbosa/picpay#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}

@@ -1,4 +1,6 @@
-![PicPay](https://user-images.githubusercontent.com/1765696/26998603-711fcf30-4d5c-11e7-9281-0d9eb20337ad.png)
+<h1 align="center">
+    <img alt="picpay" src="https://centraldesuporte.levelupgames.com.br/Media/61486946-8dd4-44fc-adbb-5f62eb6d5588.png" width="200px" />
+</h1>
 
 <h3 align="center">
   Picpay - node
@@ -10,7 +12,7 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafio-01?color=%2304D361">
 
   <a href="https://picpay.com.br">
-    <img alt="Made by picpay" src="https://img.shields.io/badge/made%20by-goBus-%2304D361">
+    <img alt="Made by goBus" src="https://img.shields.io/badge/made%20by-goBus-%2304D361">
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">

@@ -3,8 +3,8 @@ const Picpay = require('../index');
 
 describe('Testing Class PicPay - payment', () => {
 
-	const xPicpayToken = '';
-	const xSellerToken = '';
+	const xPicpayToken = '5673321b-f992-4fbf-935c-225fb178557f';
+	const xSellerToken = '906cec4c-8fc8-494d-9454-552e301d6d35';
 
 	const buyer = {
 		"firstName": "Jean Barbosa",

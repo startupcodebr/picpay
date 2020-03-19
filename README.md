@@ -23,13 +23,13 @@
 </p>
 
 <p align="center">
-  <a href="#picpay">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Picpay">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#rocket-technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#information_source-how-to-use">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">Licença</a>
 </p>
 
-## picpay
+# Picpay
 Node package API de E-Commerce do PicPay
 
 ## :rocket: Technologies
@@ -48,7 +48,7 @@ $ yarn add picpay
 $ yarn install
 ```
 
-# Make Payment:
+## Make Payment:
 
 ```bash
 
@@ -75,7 +75,7 @@ $ yarn install
 
 ```
 
-# Status Payment:
+## Status Payment:
 
 ```bash
 
@@ -83,7 +83,7 @@ $ yarn install
 
 ```
 
-# Cancel Payment:
+## Cancel Payment:
 
 ```bash
 

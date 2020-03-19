@@ -52,7 +52,7 @@ $ yarn install
 
 ```bash
 
-  const Picpay = require('./lib/picpay');
+  const Picpay = require('picpay');
 
   const buyer = {
     "firstName": "Jean Barbosa",

@@ -48,8 +48,9 @@ $ yarn add picpay
 $ yarn install
 ```
 
-```bash
 # Make Payment:
+
+```bash
 
   const Picpay = require('./lib/picpay');
 
@@ -74,17 +75,19 @@ $ yarn install
 
 ```
 
-```bash
 # Status Payment:
+
+```bash
 
   picpay.payment.status('1020380');
 
 ```
 
-```bash
 # Cancel Payment:
 
-  picpay.payment.cancel('1020371');
+```bash
+
+  picpay.payment.cancel('1020380');
 
 ```
 

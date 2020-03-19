@@ -12,7 +12,7 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafio-01?color=%2304D361">
 
   <a href="https://picpay.com.br">
-    <img alt="Made by goBus" src="https://img.shields.io/badge/made%20by-goBus-%2304D361">
+    <img alt="Made by Picpay" src="https://img.shields.io/badge/made%20by-goBus-%2304D361">
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
@@ -36,26 +36,57 @@ Node package API de E-Commerce do PicPay
 
 This project was developed with the following technologies:
 
--  [Axios](https://github.com/axios/axios)
--  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
+- [Axios](https://github.com/axios/axios)
 
 ## :information_source: How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v12.11.0][nodejs] or higher + [Yarn v1.19][yarn] or higher installed on your computer. From your command line:
-
 ```bash
-# Clone this repository
-$ git clone https://github.com/jeanbarbosa/picpay
-
-# Go into the repository
-$ cd picpay
+# Using yarn:
+$ yarn add picpay
 
 # Install dependencies
 $ yarn install
+```
 
-# Run the app
-$ yarn start
+```bash
+# Make Payment:
+
+  const Picpay = require('./lib/picpay');
+
+  const buyer = {
+    "firstName": "Jean Barbosa",
+    "lastName": "Dos Santos",
+    "document": "000.000.000-00",
+    "email": "exemple@gmail.com",
+    "phone": "+55 61 99999-9999"
+  };
+
+  const payload = {
+    "referenceId": "1020380",
+    "value": 2.51,
+    "callbackUrl": "http://www.sualoja.com.br/callback",
+    "returnUrl": "http://www.sualoja.com.br/cliente/pedido/1020380",
+    "expiresAt": "2022-05-01T16:00:00-03:00"
+  }
+
+  const picpay = new Picpay('YOUR_PICPAY_TOKEN', 'YOU_SALLER_TOKEN');
+  const {status, data} = await picpay.payment.send(payload, buyer);
+
+```
+
+```bash
+# Status Payment:
+
+  picpay.payment.status('1020380');
+
+```
+
+```bash
+# Cancel Payment:
+
+  picpay.payment.cancel('1020371');
+
 ```
 
 ## :memo: License
-This project is under the MIT license. See the [LICENSE](https://github.com/jeanbarbosa/gobus/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/jeanbarbosa/picpay/blob/master/LICENSE) for more information.

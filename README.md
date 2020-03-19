@@ -12,13 +12,13 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafio-01?color=%2304D361">
 
   <a href="https://picpay.com.br">
-    <img alt="Made by Picpay" src="https://img.shields.io/badge/made%20by-goBus-%2304D361">
+    <img alt="Made by Picpay" src="https://img.shields.io/badge/made%20by-picpay-%2304D361">
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 
-  <a href="https://github.com/jeanbarbosa/gobus/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/jeanbarbosa/gobus?style=social">
+  <a href="https://github.com/jeanbarbosa/picpay/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/jeanbarbosa/picpay?style=social">
   </a>
 </p>
 

@@ -70,7 +70,7 @@ $ yarn install
     "expiresAt": "2022-05-01T16:00:00-03:00"
   }
 
-  const picpay = new Picpay('YOUR_PICPAY_TOKEN', 'YOU_SALLER_TOKEN');
+  const picpay = new Picpay('YOUR_PICPAY_TOKEN', 'YOUR_SALLER_TOKEN');
   const {status, data} = await picpay.payment.send(payload, buyer);
 
 ```

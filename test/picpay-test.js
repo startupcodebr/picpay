@@ -1,32 +1,42 @@
 const assert = require('assert');
 const Picpay = require('../index');
+const uuid = require('uuid');
+const dotenv = require('dotenv');
+
+dotenv.config()
 
 describe('Testing Class PicPay - payment', () => {
+	const xPicpayToken = process.env.X_PICPAY_TOKEN;
+	const xSellerToken = process.env.X_SELLER_TOKEN;
 
-	const xPicpayToken = '5673321b-f992-4fbf-935c-225fb178557f';
-	const xSellerToken = '906cec4c-8fc8-494d-9454-552e301d6d35';
+	console.log(xPicpayToken);
 
 	const buyer = {
-		"firstName": "Jean Barbosa",
-		"lastName": "Dos Santos",
-		"document": "048.789.011-60",
-		"email": "programmer.jean@gmail.com",
-		"phone": "+55 61 99357-6555"
+		"firstName": "José",
+		"lastName": "Miguel",
+		"document": "918.463.410-35",
+		"email": "suporte@startupcode.com.br",
+		"phone": "+55 11 4055-4380"
 	};
 
 	const payload = {
-		"referenceId": "1020371", ///1020323 // 1020367 // 1020368 //1020369 //1020370 //1020371
+		"referenceId": uuid.v4(),
 		"value": 2.51,
-		"callbackUrl": "http://www.sualoja.com.br/callback",
-		"returnUrl": "http://www.sualoja.com.br/cliente/pedido/1020371",
+		"callbackUrl": "http://localhost:8080/callback",
+		"returnUrl": "http://localhost:8080/1020371",
 		"expiresAt": "2022-05-01T16:00:00-03:00"
 	}
 
 	const picpay = new Picpay(xPicpayToken, xSellerToken);
+
+	async function getPayment() {
+		const {status, data} = await picpay.payment.send(payload, buyer);
+		console.log(status, data);
+		return (status, data);
+	}
 	
 	it('Make Payment', () => {
-		//picpay.payment.payment(payload.referenceId, payload.value, payload.callbackUrl, payload.buyer, payload.expiresAt, payload.returnUrl);
-		//picpay.payment.send(payload, buyer);
+		return getPayment()
 		assert.equal(4, 2 + 2);
 	});
 
